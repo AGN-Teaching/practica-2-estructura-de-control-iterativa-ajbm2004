@@ -1,5 +1,10 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/eZ_U6wFI)
-[![Open in Codespaces](https://classroom.github.com/assets/launch-codespace-2972f46106e565e64193e422d61a12cf1da4916b45550586e14ef0a7c637dd04.svg)](https://classroom.github.com/open-in-codespaces?assignment_repo_id=18659529)
-# Práctica 2. Estructura de control iterativa
-
-Plantilla para el ejercicio de la práctica 2
+Introduccion 
+Mi informe describe la implementación de dos programas en Python para cifrar y descifrar mensajes utilizando el cifrado César con un desplazamiento aleatorio. La estrategia utilizada permite incluir de forma segura el desplazamiento en el mensaje cifrado, asegurando su posterior recuperación para el descifrado
+Metodo de mi estrategia 
+consiste en desplazar cada letra del mensaje original un número  de posiciones en el alfabeto. Para garantizar que el receptor pueda descifrar el mensaje sin conocer previamente , se incluye este valor en las primeras dos letras del mensaje cifrado. La técnica empleada es la siguiente:
+Se generan dos letras iniciales que representan , donde:
+La primera letra codifica la parte entera de la división de  entre 26.
+La segunda letra codifica el residuo de la división de  entre 26.
+Estas dos letras se anteponen al mensaje cifrado, permitiendo la recuperación de  en el proceso de descifrado.
+Comentarios 
+Este enfoque permite cifrar y descifrar mensajes de manera eficiente utilizando el cifrado César con un desplazamiento aleatorio. La inclusión de  dentro del mensaje cifrado permite su correcta recuperación sin la necesidad de transmitirlo por separado, lo que mejora la seguridad básica del método.
